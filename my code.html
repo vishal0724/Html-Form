@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fill form</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/home/pankaj/Desktop/vishal/image/v .jpg">
+    <style>
+      body{
+       background-color: rgb(24, 4, 51); 
+       color:aliceblue; 
+       font-family:Georgia, 'Times New Roman', Times, serif; 
+      }
+      fieldset{
+        background-color: rgb(40, 18, 68);
+        border: 5px outset white;
+      } 
+      legend{ 
+        border-left: 2px outset aqua;
+        border-top: 2px outset aqua;
+        border-right: 2px outset aqua;        
+        border-radius: 10px;
+      } 
+      textarea{
+        background-color: grey;
+        color: gold;
+        border: 5px outset white;
+      } 
+      h2{
+        text-indent: 20px;
+      }
+      p{
+        font-size: 130%;
+      }
+    </style>
+
+  </head>
+
+  <body>
+      <h2>The input Element</h2>
+      <form action='/action_page.php'>
+        <fieldset>
+            <legend><i>Most Important to Fill</i></legend>
+            <p><li><u>Please enter your<sup>'</sup>s full name:</u></li></p>
+        
+            <label for="pi" >First Name</label></br>
+            <input type='text' id='pi' name='Name' value=''><br>
+        
+            <label for='sun'>Second Name</label></br>
+            <input type='text' id='sun' name='Last name' value=''><br><br>
+        
+            <p><li><u>Please enter your<sup>'</sup>s Gender: </u></li></p>
+            <input type='checkbox' id='cycle' name='Gender' value='Male'>
+            <label for='cycle'>Male</label><br> 
+          
+            <input type='checkbox' id='bow' name='Gender' value='Female'> 
+            <label for='bow'>Female</label><br><br> 
+        
+            <p><li><u>Please enter your<sup>'</sup>s class:</u></li></p>
+              <label for='lie'>Class-</label>
+              <select id='lie' name='class' >
+                <option value=''></option>
+                <option value='sixth'>Sixth</option>  
+                <option value='Seventh'>Seventh</option>  
+                <option value='Eighth'>Eighth</option>   
+                <option value='Ninth' selected>Ninth</option>   
+                <option value='Tenth'>Tenth</option>
+              </select><br><br>
+        
+        </fieldset>
+            
+            <p><li><u> Write something about own:</u></li></p>
+            <label for='sci'>About Candidate-</label>
+            <textarea id='sci' name='About candidate:' rows='4' cols='77'>
+            </textarea><br><br>
+        
+            <input type='submit' value='submit'>
+       
+      </form>
+  </body>
+</html>
